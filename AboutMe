@@ -1,14 +1,1 @@
-This code will help create a distance_matrix for a set of points on a graph. 
-## Users can initialize  the input parameters as follows:
 
-input: (int or nx2 dataframe) 
-
-If input is an integer n the code will generate n random points on a plane and calculate the pairwise distance between all the points and return a nxn matrix.
-
-If input is a pandas nx2 dataframe with x_cordinates in column 0 and y_coordinates in column 1 the code will generate directly calculate the pairwise distance between all the points and return a nxn matrix.
-
-depo_init = False (default): If depo_init is set to True, the code will add a point for at row 0 with coordinates = (depo_x, depo_y)
-
-depo_x =0 (default), depo_y = 0 (default): x and y coordinates of the depot point
-
-x_lb = 0 (default), y_lb = 0 (default), x_ub = 100 (default), y_ub = 100 (default): User can also pass the lower bound and upper bound for random points.
