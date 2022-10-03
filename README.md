@@ -1,4 +1,4 @@
-# distance_matrix
+# d_matrix
 This function will generate a distance matrix for a set of points on the cartesian plane
 
 This distance matrix is particularly useful for testing Vehicle Routing Problem or Traveling Salesperson Problem in supply chain.
