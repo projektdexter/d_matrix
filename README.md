@@ -18,6 +18,11 @@ If input is a **pandas nx2 dataframe** with x_cordinates in column 0 and y_coord
 
 **_x_lb_** = 0 (default), **_y_lb_** = 0 (default), **_x_ub_** = 100 (default), **_y_ub_** = 100 (default): User can also pass the lower bound and upper bound for random points.
 
+## Update 1:
+
+You can now calculate the haversine distance between points by calling **_method = 'haversine'_**
+
+
 ## Example 1:
 ```
 df, d_matrix = random_dmatrix(input = 10)
