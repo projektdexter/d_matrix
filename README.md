@@ -1,5 +1,9 @@
 # d_matrix
-This function will generate a distance matrix for a set of points on the cartesian plane
+This function will 
+1. Generate random points on a cartesian plane and create a distance matrix for the points in a **_nxn matrix_**
+2. Calculate the **_euclidean distance_** for a set of points passed in the input criteria and create a distance matrix for the points in a **_nxn matrix_**
+3. Calculate the _**haversine distance**_ for a set of points passed in the input criteria and create a distance matrix for the points in a **_nxn matrix_**
+4. Calculate the **_road distance_** for a set of points passed in the input criteria and create a distance matrix for the points in a **_nxn matrix_**
 
 This distance matrix is particularly useful for testing Vehicle Routing Problem or Traveling Salesperson Problem in supply chain.
 
@@ -22,8 +26,12 @@ If input is a **pandas nx2 dataframe** with x_cordinates in column 0 and y_coord
 
 You can now calculate the haversine distance between points by calling **_method = 'haversine'_**
 
+## Update 2:
 
-## Example 1:
+You can now calculate the road distance between points by calling **_method = 'roadDistance'_** and passing the googlemaps api key as **_api_key_**
+
+
+## Example :
 ```
 df, d_matrix = random_dmatrix(input = 10)
 print(df)
@@ -58,7 +66,7 @@ d_matrix =
 8  16.0  55.0  38.0  33.0  40.0  64.0  51.0  59.0   0.0  42.0
 9  57.0  91.0  58.0  69.0  73.0  57.0  85.0  65.0  42.0   0.0
 ```
-## Example 2:
+## Example :
 ```
 df, d_matrix = random_dmatrix(input = 10, depo_init=True, depo_x=10, depo_y=15)
 print(df)
@@ -93,7 +101,7 @@ d_matrix =
 8  68.0  119.0  72.0  44.0  64.0  45.0  69.0  87.0    0.0   11.0
 9  57.0  110.0  61.0  43.0  60.0  41.0  63.0  80.0   11.0    0.0
 ```
-## Example 3:
+## Example :
 ```
 df, d_matrix = random_dmatrix(input = 10, depo_init=True, depo_x=10, depo_y=15, x_lb=5, y_lb=5, x_ub=20, y_ub=20)
 print(df)
@@ -128,7 +136,7 @@ d_matrix =
 8   7.0   9.0  9.0   2.0  10.0   9.0   7.0   7.0   0.0   6.0
 9   9.0   6.0  9.0   7.0   4.0   5.0  11.0   2.0   6.0   0.0
 ```
-## Example 4:
+## Example :
 ```
 df, d_matrix = random_dmatrix(input = pd.DataFrame({'x_cord': [10,15,20,25],'y_cord':[10,25,30,24]}), 
                                                     depo_init=True, depo_x=10, depo_y=15)
