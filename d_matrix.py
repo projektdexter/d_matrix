@@ -29,8 +29,7 @@ def random_dmatrix(input, method = 'euclidean', depo_init = False, depo_x = 0, d
          if (depo_init == False) & (method == 'roadDistance'):
             d_matrix = pd.DataFrame(index=list(range(input.shape[0])), columns=list(range(input.shape[0])))
             input['lat_long'] = input['y_cord'].astype(str) + ',' + input['x_cord'].astype(str)
-            
-           for j in range(input.shape[0]):
+            for j in range(input.shape[0]):
                for k in range(input.shape[0]):
             if (j==k):
                 d_matrix.iloc[j,k]=0
