@@ -1,4 +1,4 @@
-# d_matrix
+# distance_matrix
 This function will 
 1. Generate random points on a cartesian plane and create a distance matrix for the points in a **_nxn matrix_**
 2. Calculate the **_euclidean distance_** for a set of points passed in the input criteria and create a distance matrix for the points in a **_nxn matrix_**
